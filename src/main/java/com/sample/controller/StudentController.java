@@ -29,6 +29,10 @@ public class StudentController {
         if(result.hasErrors()){
           return new ResponseEntity<>(result.getFieldError().getDefaultMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
         }
+        System.out.println(1000);
+        System.out.println(1000);
+        System.out.println(500);
+
 
         StudentDto studentDto = studentService.addStudent(dto);
         return new ResponseEntity<>(studentDto, HttpStatus.CREATED);
