@@ -31,6 +31,7 @@ public class StudentController {
         }
         System.out.println(1000);
         System.out.println(1000);
+        System.out.println(13445);
 
 
         StudentDto studentDto = studentService.addStudent(dto);
